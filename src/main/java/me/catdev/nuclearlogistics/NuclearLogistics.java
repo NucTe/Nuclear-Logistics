@@ -24,7 +24,7 @@ import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
 @Mod(me.catdev.nuclearlogistics.NuclearLogistics.MOD_ID)
 public class NuclearLogistics
 {
-    public static final String MOD_ID = "nuclearcoremod";
+    public static final String MOD_ID = "nuclearlogistics";
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public NuclearLogistics()
