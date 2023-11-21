@@ -7,6 +7,8 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -26,6 +28,9 @@ public class BlockInit {
 
 //    public static final RegistryObject<Block> ELECTRICAL_WIRE = RegisterBlock("electrical_wire", () -> new ElectricalWire(
 //            BlockBehaviour.Properties.of(Material.STONE).strength(0f).noOcclusion()), CreativeTabs.NUCLEARCORE);
+
+    public static final RegistryObject<LiquidBlock> URANIUM_LIQUID_BLOCK = BLOCKS.register("uranium_liquid_block",
+            () -> new LiquidBlock(FluidInit.SOURCE_URANIUM_LIQUID, BlockBehaviour.Properties.copy(Blocks.WATER)));
 
     public static <T extends Block> RegistryObject<T> RegisterBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> ret = BLOCKS.register(name, block);
