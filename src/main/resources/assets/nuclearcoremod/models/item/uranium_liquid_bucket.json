@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "nuclearcoremod:item/uranium_liquid_bucket"
+  }
+}
