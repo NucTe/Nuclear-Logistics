@@ -1,0 +1,10 @@
+{
+
+  "item.nuclearlogistics.radiationmeter": "Miernik promieniowania",
+  "item.nuclearlogistics.uranium_ingot": "Sztabka uranu",
+
+  "block.nuclearlogistics.uranium_ore": "Ruda uranu",
+  "block.nuclearlogistics.electrical_wire": "Przewód elektryczny",
+
+  "itemGroup.nuclearlogistics.nuclearcoretab": "NuclearCore"
+}

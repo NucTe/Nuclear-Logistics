@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "nuclearlogistics:electrical_wire"
+    },
+    "title": "Electric Power",
+    "description": "Get electrical wire",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "nuclearlogistics/nuclearcore",
+  "criteria": {
+    "criteria": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "nuclearlogistics:electrical_wire"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 10
+  }
+}

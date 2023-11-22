@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=north" : {
+      "model": "nuclearlogistics:block/electrical_wire"
+    },
+    "facing=south" : {
+      "model": "nuclearlogistics:block/electrical_wire", "y": 180
+    },
+    "facing=west" : {
+      "model": "nuclearlogistics:block/electrical_wire", "y": 270
+    },
+    "facing=east" : {
+      "model": "nuclearlogistics:block/electrical_wire", "y": 90
+    },
+    "facing=up" : {
+      "model": "nuclearlogistics:block/electrical_wire", "x": 90
+    },
+    "facing=down" : {
+      "model": "nuclearlogistics:block/electrical_wire", "x": -90
+    }
+  }
+}

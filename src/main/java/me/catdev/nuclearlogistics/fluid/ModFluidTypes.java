@@ -22,7 +22,7 @@ public class ModFluidTypes {
             .lightLevel(2).density(19).viscosity(6));
 
     private static RegistryObject<FluidType> register(String name, FluidType.Properties properties) {
-        // TODO: change purpule to green
+        // TODO: change purple to green
         return FLUID_TYPES.register(name, () -> new BaseFluidType(WATER_STILL_RL, WATER_FLOWING_RL, URANIUM_LIQUID_OVERLAY_RL,
                 0xA1E038D0, new Vector3f(224f / 255f, 56f / 255f, 208f / 255f), properties));
     }

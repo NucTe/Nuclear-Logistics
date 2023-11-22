@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "" : { "model": "nuclearlogistics:block/uranium_ore" }
+  }
+}

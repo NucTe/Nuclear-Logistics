@@ -1,0 +1,15 @@
+{
+
+  "item.nuclearlogistics.radiationmeter": "Radiation Meter",
+  "item.nuclearlogistics.uranium_ingot":  "Uranium Ingot",
+  "item.nuclearlogistics.uranium_liquid_bucket":  "Uranium Liquid Bucket",
+
+  "block.nuclearlogistics.uranium_ore":  "Uranium Ore",
+  "block.nuclearlogistics.electrical_wire": "Electrical Wire",
+
+  "itemGroup.nuclearcoretab": "Nuclear Logistics",
+
+  "death.attack.nuclearlogistics.radiation": "{} died from Radiation",
+  "commands.title.show.actionbar.single.nuclearlogistics.radiationmeter": "Distance to Radiation Source: %s"
+
+}
