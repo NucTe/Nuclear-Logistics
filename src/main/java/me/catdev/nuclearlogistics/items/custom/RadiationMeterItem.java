@@ -10,9 +10,12 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import software.bernie.geckolib3.core.IAnimatable;
+import software.bernie.geckolib3.core.manager.AnimationData;
+import software.bernie.geckolib3.core.manager.AnimationFactory;
 
 
-public class RadiationMeterItem extends Item {
+public class RadiationMeterItem extends Item implements IAnimatable {
 
     private static UraniumOreEntity uraniumOre;
 
@@ -41,4 +44,13 @@ public class RadiationMeterItem extends Item {
         }
     }
 
+    @Override
+    public void registerControllers(AnimationData data) {
+
+    }
+
+    @Override
+    public AnimationFactory getFactory() {
+        return null;
+    }
 }

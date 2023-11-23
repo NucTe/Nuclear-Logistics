@@ -11,6 +11,8 @@ import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.ItemInHandRenderer;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.entity.ItemEntityRenderer;
+import net.minecraft.client.renderer.entity.ItemFrameRenderer;
+import net.minecraft.client.renderer.entity.ItemRenderer;
 import net.minecraft.client.resources.model.BakedModel;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
@@ -25,6 +27,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 import software.bernie.geckolib3.GeckoLib;
 import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
+import software.bernie.geckolib3.renderers.geo.GeoItemRenderer;
 
 @Mod(me.catdev.nuclearlogistics.NuclearLogistics.MOD_ID)
 public class NuclearLogistics
@@ -64,6 +67,11 @@ public class NuclearLogistics
         @SubscribeEvent
         public static void registerArmorRenderers(final EntityRenderersEvent.AddLayers event) {
             GeoArmorRenderer.registerArmorRenderer(RadiationSuitArmorItem.class, new RadiationSuitRenderer());
+        }
+
+        @SubscribeEvent
+        public static void registerItemRenderers(final EntityRenderersEvent.RegisterRenderers event) {
+            event.register
         }
 
         @SubscribeEvent
