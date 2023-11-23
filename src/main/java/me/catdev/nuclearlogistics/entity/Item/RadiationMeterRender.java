@@ -12,7 +12,7 @@ import software.bernie.geckolib3.renderers.geo.GeoItemRenderer;
 
 public class RadiationMeterRender extends GeoItemRenderer<RadiationMeterItem> {
 
-    public RadiationMeterRender(AnimatedGeoModel<RadiationMeterItem> modelProvider) {
-        super(modelProvider);
+    public RadiationMeterRender() {
+        super(new RadiationMeterModel());
     }
 }
