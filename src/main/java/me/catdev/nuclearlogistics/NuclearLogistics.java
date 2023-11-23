@@ -32,11 +32,13 @@ import software.bernie.geckolib3.renderers.geo.GeoItemRenderer;
 @Mod(me.catdev.nuclearlogistics.NuclearLogistics.MOD_ID)
 public class NuclearLogistics
 {
+    private static NuclearLogistics instance;
     public static final String MOD_ID = "nuclearlogistics";
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public NuclearLogistics()
     {
+        instance = this;
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         BlockInit.Register(modEventBus);
@@ -62,6 +64,10 @@ public class NuclearLogistics
 
     }
 
+    public static NuclearLogistics GetInstance(){
+        return instance;
+    }
+
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents  {
         @SubscribeEvent
@@ -69,10 +75,6 @@ public class NuclearLogistics
             GeoArmorRenderer.registerArmorRenderer(RadiationSuitArmorItem.class, new RadiationSuitRenderer());
         }
 
-        @SubscribeEvent
-        public static void registerItemRenderers(final EntityRenderersEvent.RegisterRenderers event) {
-            event.register
-        }
 
         @SubscribeEvent
         public static void onClientStartup(FMLClientSetupEvent ev) {
